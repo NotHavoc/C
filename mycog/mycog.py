@@ -9,7 +9,7 @@ from cogs.utils.chat_formatting import box, pagify, escape_mass_mentions
 from random import choice
 
 
-class Mycog:
+class Mycog(discord.Client):
     """My custom cog that does stuff!"""
 
     def __init__(self, bot):
