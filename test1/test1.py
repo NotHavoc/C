@@ -8,7 +8,7 @@ from cogs.utils.dataIO import dataIO
 from cogs.utils.chat_formatting import box, pagify, escape_mass_mentions
 from random import choice
 
-Class Test1(discord.Client)
+Class Test1()
 
     async def on_message(self, message):
         yield from self.send_message(message.channel, 'Hello World!')
