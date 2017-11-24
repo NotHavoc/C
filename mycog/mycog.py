@@ -21,7 +21,7 @@ class Mycog:
 
         #Your code will go here
         await self.bot.say("I can do stuff!")
-        day = datetime.datetime.now()
+        day = datetime.datetime.now().isoweekday()
         await self.bot.say(day)
         
     async def on_message(self, message):
