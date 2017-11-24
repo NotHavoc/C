@@ -13,8 +13,13 @@ Class Test1()
     def __init__(self, bot):
         self.bot = bot
 
-    async def on_message(self, message):
-        yield from self.send_message(message.channel, 'Hello World!')
+    @commands.command()
+    async def mycom(self):
+        """This does stuff!"""
+
+        #Your code will go here
+        await self.bot.say("I can do stuff!")
+
 
 def setup(bot):
     bot.add_cog(Test1(bot))
