@@ -63,4 +63,4 @@ class Mycog:
 def setup(bot):
     n = Mycog(bot)
     bot.add_cog(n)
-    bot.add_listener(n.msg_listener, "on_message")
+    bot.add_listener(n.on_message, "on_message")
