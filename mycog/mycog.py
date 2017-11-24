@@ -21,6 +21,7 @@ class Mycog:
 
         #Your code will go here
         await self.bot.say("I can do stuff!")
+        await self.bot.say(datetime.now().isoweekday())
         
     async def on_message(self, message):
         #reads server messages, if it is the first message of wednesday posts the notification
