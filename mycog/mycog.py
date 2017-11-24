@@ -56,7 +56,7 @@ class Mycog(discord.Client):
         #if (triggered == true):
          #   return
       
-        await self.bot.say("It is Wednesday my dudes")
+        yield from self.bot.say("It is Wednesday my dudes")
         triggered = true    
 
 def setup(bot):
