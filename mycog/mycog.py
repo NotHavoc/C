@@ -23,7 +23,7 @@ class Mycog:
         await self.bot.say("I can do stuff!")
         day = datetime.datetime.now().isoweekday()
         await self.bot.say(day)
-            
+            """
     def is_command(self, message):
         if callable(self.bot.command_prefix):
             prefixes = self.bot.command_prefix(self.bot, msg)
@@ -33,7 +33,7 @@ class Mycog:
             if msg.content.startswith(p):
                 return True
         return False
-
+"""
     async def on_message(self, message):
         #reads server messages, if it is the first message of wednesday posts the notification
         channel = message.channel
