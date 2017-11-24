@@ -34,7 +34,6 @@ class Mycog(discord.Client):
                 return True
         return False
 
-    @asyncio.coroutine   
     async def on_message(self, message):
         #reads server messages, if it is the first message of wednesday posts the notification
         channel = message.channel
