@@ -37,7 +37,6 @@ class Mycog:
         
     async def on_message(self, message):
         #reads server messages, if it is the first message of wednesday posts the notification
-        await self.bot.say("It is Wednesday my dudes")
         channel = message.channel
         author = message.author
        # weekday = datetime.datetime.now().isoweekday()
