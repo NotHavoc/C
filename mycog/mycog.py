@@ -24,7 +24,7 @@ class Mycog:
         day = datetime.datetime.now().isoweekday()
         await self.bot.say(day)
             
-    def is_command(self, msg):
+    def is_command(self, message):
         if callable(self.bot.command_prefix):
             prefixes = self.bot.command_prefix(self.bot, msg)
         else:
@@ -62,4 +62,3 @@ class Mycog:
 def setup(bot):
     n = Mycog(bot)
     bot.add_cog(n)
-   # bot.add_listener(n.on_message, "on_message")
