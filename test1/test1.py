@@ -10,8 +10,11 @@ from random import choice
 
 Class Test1()
 
+    def __init__(self, bot):
+        self.bot = bot
+
     async def on_message(self, message):
         yield from self.send_message(message.channel, 'Hello World!')
 
 def setup(bot):
-    bot.add_cog(test1(bot))
+    bot.add_cog(Test1(bot))
